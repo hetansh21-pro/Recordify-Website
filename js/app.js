@@ -9,18 +9,29 @@ document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelector(".nav-links");
 
   if (mobileMenuBtn && navLinks) {
-    mobileMenuBtn.addEventListener("click", () => {
-      navLinks.classList.toggle("mobile-open");
-      mobileMenuBtn.setAttribute(
-        "aria-expanded",
-        navLinks.classList.contains("mobile-open")
-      );
+    const toggleMenu = () => {
+      const isOpen = navLinks.classList.toggle("mobile-open");
+      mobileMenuBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    };
+
+    mobileMenuBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      toggleMenu();
     });
 
     navLinks.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", () => {
         navLinks.classList.remove("mobile-open");
+        mobileMenuBtn.setAttribute("aria-expanded", "false");
       });
+    });
+
+    // Close menu when tapping outside on mobile
+    document.addEventListener("click", (e) => {
+      if (navLinks.classList.contains("mobile-open") && !navLinks.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+        navLinks.classList.remove("mobile-open");
+        mobileMenuBtn.setAttribute("aria-expanded", "false");
+      }
     });
   }
 
@@ -197,33 +208,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const toast = document.createElement("div");
     toast.className = "toast-notification";
     toast.innerHTML = `
-      <div style="
-        position: fixed;
-        bottom: 24px;
-        right: 24px;
-        background: linear-gradient(135deg, #18191f 0%, #0e0f13 100%);
-        border: 1px solid #1DB954;
-        color: #ffffff;
-        padding: 14px 22px;
-        border-radius: 9999px;
-        font-weight: 600;
-        font-size: 0.95rem;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.9), 0 0 25px rgba(29, 185, 84, 0.45);
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        z-index: 1000;
-      ">
-        <span style="color: #1ed760; font-size: 1.25rem;">✓</span>
+      <div class="toast-notification-box">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1ed760" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><polyline points="20 6 9 17 4 12"></polyline></svg>
         <span>${message}</span>
       </div>
     `;
     document.body.appendChild(toast);
 
     setTimeout(() => {
-      toast.style.transition = "opacity 0.4s ease, transform 0.4s ease";
-      toast.style.opacity = "0";
-      toast.style.transform = "translateY(12px)";
+      const box = toast.querySelector(".toast-notification-box");
+      if (box) {
+        box.style.opacity = "0";
+        box.style.transform = "translate(-50%, 12px)";
+      }
       setTimeout(() => toast.remove(), 400);
     }, 4500);
   }

@@ -51,13 +51,25 @@
           <li><a href="#install">Installation</a></li>
           <li><a href="#specs">Specs</a></li>
           <li><a href="#faq">FAQ</a></li>
+          <li class="mobile-only-cta">
+            <a href="#download" class="btn btn-primary btn-mobile-download">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download APK</span>
+            </a>
+          </li>
         </ul>
 
         <div class="nav-actions">
           <a href="#download" class="btn btn-primary">Download APK</a>
         </div>
 
-        <button class="mobile-menu-btn" aria-label="Toggle navigation menu">☰</button>
+        <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg class="hamburger-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line class="line-1" x1="3" y1="6" x2="21" y2="6"></line>
+            <line class="line-2" x1="3" y1="12" x2="21" y2="12"></line>
+            <line class="line-3" x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -300,8 +312,8 @@
             </div>
 
             <div class="device-frame-wrapper">
-              <div class="phone-mockup-frame" style="width: 275px; height: 570px;">
-                <img src="assets/images/screenshots/screen_home.jpg" alt="Mobile UI" style="width: 100%; height: 100%; object-fit: cover;">
+              <div class="phone-mockup-frame showcase-phone-mockup">
+                <img src="assets/images/screenshots/screen_home.jpg" alt="Mobile UI">
               </div>
             </div>
           </div>
@@ -568,6 +580,10 @@
         </div>
 
         <div class="specs-table-box">
+          <div class="table-scroll-hint">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            <span>Scroll horizontally to compare versions</span>
+          </div>
           <table class="specs-table">
             <thead>
               <tr>
@@ -691,7 +707,7 @@
         <h2>Ready for Better Music?</h2>
         <p>Download Recordify today and take complete control of your streaming, audio capture, and television experience.</p>
         
-        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+        <div class="cta-banner-buttons">
           <a href="https://github.com/hetansh21-pro/Recordify/releases/download/v1.0.0/Recordify.apk" 
              class="btn btn-primary download-trigger" 
              data-platform="Recordify Mobile">
