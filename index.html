@@ -9,616 +9,682 @@
   <meta name="title" content="Recordify — Free Music Streaming, Audio Capture & Android TV Player">
   <meta name="description" content="Download Recordify for Android and Android TV. Enjoy studio-quality music, 70% mobile data savings, VibeFlow smart queues, zero-ad listening, internal audio capture, and full TV remote control.">
   <meta name="keywords" content="Recordify, Music Player, Android TV, Spotify Alternative, Free Music App, Audio Capture, Ad-Free Music, VibeFlow Queue">
-  <meta name="theme-color" content="#121212">
+  <meta name="theme-color" content="#050608">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/images/ic_recordify_logo_circle.png">
   <link rel="apple-touch-icon" href="assets/images/ic_recordify_logo_circle.png">
+
+  <!-- Google Font: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- ========================================================================
-       1. Top Header & Navigation
-       ======================================================================== -->
-  <header class="site-header">
-    <div class="container nav-container">
-      <a href="#" class="brand-logo">
-        <img src="assets/images/ic_recordify_logo_circle.png" alt="Recordify Logo">
-        <span>Recordify</span>
-      </a>
+  <!-- Ambient Mesh Gradient Orbs (Background Glow Everywhere) -->
+  <div class="ambient-glow-wrapper">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+  </div>
 
-      <ul class="nav-links">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#showcase">Mobile vs TV</a></li>
-        <li><a href="#install">Installation</a></li>
-        <li><a href="#specs">Specs</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ul>
+  <div class="page-wrapper">
 
-      <div class="nav-actions">
-        <a href="#download" class="btn btn-primary">Download APK</a>
+    <!-- ========================================================================
+         1. Top Header & Navigation
+         ======================================================================== -->
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="#" class="brand-logo">
+          <img src="assets/images/ic_recordify_logo_circle.png" alt="Recordify Logo">
+          <span>Recordify</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#screenshots">Screenshots</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#showcase">Mobile vs TV</a></li>
+          <li><a href="#install">Installation</a></li>
+          <li><a href="#specs">Specs</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="#download" class="btn btn-primary">Download APK</a>
+        </div>
+
+        <button class="mobile-menu-btn" aria-label="Toggle navigation menu">☰</button>
       </div>
+    </header>
 
-      <button class="mobile-menu-btn" aria-label="Toggle navigation menu">☰</button>
-    </div>
-  </header>
+    <!-- ========================================================================
+         2. Hero Section with Dual Downloads & 3D Screenshots Stack
+         ======================================================================== -->
+    <section class="hero-section" id="download">
+      <div class="container">
+        <div class="hero-badge">
+          <span>✨ v1.0.0 Public Release • Free & Open Source</span>
+        </div>
 
-  <!-- ========================================================================
-       2. Hero Section
-       ======================================================================== -->
-  <section class="hero-section" id="download">
-    <div class="container">
-      <div class="hero-badge">
-        <span>✨ v1.0.0 Public Release • Free & Open Source</span>
-      </div>
+        <h1 class="hero-title">
+          Your Music, Unleashed.<br>
+          <span class="text-gradient">Zero Ads. Studio Fidelity.</span>
+        </h1>
 
-      <h1 class="hero-title">
-        Your Music, Unleashed.<br>
-        <span class="text-gradient">Zero Ads. Studio Fidelity.</span>
-      </h1>
+        <p class="hero-subtitle">
+          The ultimate next-generation music player built natively for Android Phones and Android TV. Experience fluid Spotify-inspired gestures, VibeFlow smart queues, internal audio capture, 70% data savings, and pure couch-friendly TV navigation.
+        </p>
 
-      <p class="hero-subtitle">
-        The ultimate next-generation music player built natively for Android Phones and Android TV. Experience fluid Spotify-inspired gestures, VibeFlow smart queues, internal audio capture, 70% data savings, and pure couch-friendly TV navigation.
-      </p>
-
-      <!-- Dual Download Cards (Direct Releases) -->
-      <div class="download-cards-grid">
-        <!-- Card 1: Phone / Tablet -->
-        <div class="download-card">
-          <div>
-            <div class="card-top">
-              <div class="platform-icon">📱</div>
-              <span class="version-pill">v1.0.0 • Mobile</span>
+        <!-- Dual Download Cards (Direct Releases) -->
+        <div class="download-cards-grid">
+          <!-- Card 1: Phone / Tablet -->
+          <div class="download-card">
+            <div>
+              <div class="card-top">
+                <div class="platform-icon">📱</div>
+                <span class="version-pill">v1.0.0 • Mobile</span>
+              </div>
+              <h3>Recordify Mobile</h3>
+              <p>Designed for Android phones and tablets with fluid touch gestures, swipeable queues, and OLED dark battery saver.</p>
+              
+              <ul class="card-meta-list">
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Android 10+ (API 29 to 35)
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  73.7 MB APK • ARM64 & x86_64
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Swipe-to-Queue & Drag Reordering
+                </li>
+              </ul>
             </div>
-            <h3>Recordify Mobile</h3>
-            <p>Designed for Android phones and tablets with fluid touch gestures, swipeable queues, and OLED dark battery saver.</p>
-            
-            <ul class="card-meta-list">
+
+            <a href="https://github.com/hetansh21-pro/Recordify/releases/download/v1.0.0/Recordify.apk" 
+               class="btn btn-primary download-btn download-trigger" 
+               data-platform="Recordify Mobile">
+              ⬇️ Download for Android
+            </a>
+          </div>
+
+          <!-- Card 2: Android TV / Google TV -->
+          <div class="download-card">
+            <div>
+              <div class="card-top">
+                <div class="platform-icon">📺</div>
+                <span class="version-pill">v1.0.0 • TV</span>
+              </div>
+              <h3>Recordify TV</h3>
+              <p>Dedicated 10-foot television experience with full remote control focus, locked navigation, and live audio visualizers.</p>
+              
+              <ul class="card-meta-list">
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Android TV, Google TV & Fire TV
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  73.5 MB APK • 100% Remote D-pad Ready
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Capsule Search & Full-Screen Player
+                </li>
+              </ul>
+            </div>
+
+            <a href="https://github.com/hetansh21-pro/Recordify/releases/download/v1.0.0/Recordify.TV.apk" 
+               class="btn btn-primary download-btn download-trigger" 
+               data-platform="Recordify TV">
+              ⬇️ Download for Android TV
+            </a>
+          </div>
+        </div>
+
+        <!-- 3D Screenshots Hero Stack -->
+        <div class="hero-screens-wrapper">
+          <div class="hero-screens-grid">
+            <!-- Left Screen: Search & Categories -->
+            <div class="phone-mockup-frame left-phone">
+              <img src="assets/images/screenshots/screen_search.jpg" alt="Recordify Search Categories">
+              <div class="screen-badge-label">Explore & Categories</div>
+            </div>
+
+            <!-- Center Screen: Home Feed -->
+            <div class="phone-mockup-frame center-phone">
+              <img src="assets/images/screenshots/screen_home.jpg" alt="Recordify Home Screen">
+              <div class="screen-badge-label">Home & Heavy Rotation</div>
+            </div>
+
+            <!-- Right Screen: Library Tiles -->
+            <div class="phone-mockup-frame right-phone">
+              <img src="assets/images/screenshots/screen_library.jpg" alt="Recordify Library Screen">
+              <div class="screen-badge-label">Your Smart Library</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         3. Interactive Screenshots Gallery Section
+         ======================================================================== -->
+    <section class="gallery-section" id="screenshots">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Inside Recordify</div>
+          <h2>Explore Every Screen</h2>
+          <p>Real in-app captures showcasing the sleek AMOLED black design, fluid navigation, and powerful feature set.</p>
+        </div>
+
+        <!-- Tab Pills to switch screenshots -->
+        <div class="gallery-nav-pills">
+          <button class="gallery-pill active" data-screen="home">🏠 Home Hub</button>
+          <button class="gallery-pill" data-screen="search">🔍 Visual Search</button>
+          <button class="gallery-pill" data-screen="recents">⚡ Active Recents</button>
+          <button class="gallery-pill" data-screen="library">📚 Your Library</button>
+          <button class="gallery-pill" data-screen="video">🎬 Video Downloader</button>
+        </div>
+
+        <div class="gallery-display-card">
+          <div class="gallery-text-side">
+            <h3 id="gallery-title">Personalized Home Hub</h3>
+            <p id="gallery-desc">Instant greeting, quick 6 access tiles, India trending Bollywood feeds, and automated Heavy Rotation based on your music taste.</p>
+
+            <ul class="gallery-feature-points" id="gallery-points">
               <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                Android 10+ (API 29 to 35)
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Quick 6 access cards with 1-tap playback</span>
               </li>
               <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                73.7 MB APK • ARM64 & x86_64
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Your Heavy Rotation: All-time most played tracks</span>
               </li>
               <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                Swipe-to-Queue & Drag Reordering
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Daily Mixes generated directly from your audio history</span>
               </li>
             </ul>
           </div>
 
+          <div class="gallery-phone-container">
+            <div class="gallery-single-phone">
+              <img id="gallery-img" src="assets/images/screenshots/screen_home.jpg" alt="Recordify App Screen">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. Showcase Section (Phone vs TV)
+         ======================================================================== -->
+    <section class="showcase-section" id="showcase">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Dual Platform Experience</div>
+          <h2>Engineered for Your Phone. Perfected for Your Living Room.</h2>
+          <p>Switch between the phone and TV modes below to see how Recordify adapts seamlessly to your lifestyle.</p>
+        </div>
+
+        <div class="showcase-tabs">
+          <button class="showcase-tab-btn active" data-tab="mobile">📱 Mobile Phone Experience</button>
+          <button class="showcase-tab-btn" data-tab="tv">📺 Android TV 10-Foot UI</button>
+        </div>
+
+        <div class="showcase-content-box">
+          <!-- Panel 1: Mobile -->
+          <div class="showcase-panel active" id="panel-mobile">
+            <div class="showcase-info">
+              <h3>Fluid Touch Control & VibeFlow</h3>
+              <p>Every pixel in Recordify Mobile is tuned for tactile satisfaction. Drag songs anywhere across your queue, swipe right to add music instantly, and glide smoothly with fluid spring physics.</p>
+              
+              <ul class="feature-bullet-list">
+                <li>
+                  <div class="bullet-icon">✓</div>
+                  <div class="bullet-text">
+                    <strong>Multi-Step Drag & Drop Reordering</strong>
+                    <span>Hold any queue track handle (≡) and move it up or down to place it exactly where you want.</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="bullet-icon">✓</div>
+                  <div class="bullet-text">
+                    <strong>Spotify Swipe-to-Queue Everywhere</strong>
+                    <span>Swipe right on any search result or album track to queue it instantly with a green indicator.</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="bullet-icon">✓</div>
+                  <div class="bullet-text">
+                    <strong>70% Data Saver Mode</strong>
+                    <span>Low-bandwidth 96 kbps audio streaming with a 10s smart skip window protects your mobile data plan.</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="device-frame-wrapper">
+              <div class="phone-mockup-frame" style="width: 275px; height: 570px;">
+                <img src="assets/images/screenshots/screen_home.jpg" alt="Mobile UI" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 2: TV -->
+          <div class="showcase-panel" id="panel-tv">
+            <div class="showcase-info">
+              <h3>Pure 10-Foot Remote Control</h3>
+              <p>Built completely from the ground up for the TV screen. No air mouse or trackpad required. Navigate effortlessly from your couch using the D-pad arrow keys on your TV remote.</p>
+              
+              <ul class="feature-bullet-list">
+                <li>
+                  <div class="bullet-icon">✓</div>
+                  <div class="bullet-text">
+                    <strong>Strict Focus Locking</strong>
+                    <span>Focus stays strictly locked to open albums and content rows so your remote cursor never gets lost behind views.</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="bullet-icon">✓</div>
+                  <div class="bullet-text">
+                    <strong>Top Navigation Bar with Now-Playing Pill</strong>
+                    <span>Always see current track artwork and live animated green equalizer bars in the top corner.</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="bullet-icon">✓</div>
+                  <div class="bullet-text">
+                    <strong>Capsule Search Bar</strong>
+                    <span>Native TV virtual keyboard input with manual Enter-only execution so you can type full queries uninterrupted.</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="device-frame-wrapper">
+              <div class="tv-frame-mockup">
+                <div class="mock-tv-navbar">
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <img src="assets/images/ic_recordify_logo_circle.png" style="width: 22px; height: 22px; border-radius: 50%;">
+                    <span style="font-size: 0.8rem; font-weight: 800;">Recordify TV</span>
+                  </div>
+                  <div class="mock-tv-tabs">
+                    <span class="mock-tv-tab active">Home</span>
+                    <span class="mock-tv-tab">Search</span>
+                    <span class="mock-tv-tab">Your Library</span>
+                  </div>
+                  <span style="color: #1DB954; font-size: 0.75rem; font-weight: bold;">Live EQ ılılı</span>
+                </div>
+                <div class="mock-tv-grid">
+                  <div class="mock-tv-card">
+                    <div class="mock-tv-card-art"></div>
+                    <div style="font-size: 0.75rem; font-weight: bold;">90s Bollywood</div>
+                  </div>
+                  <div class="mock-tv-card" style="border-color: #ffffff;">
+                    <div class="mock-tv-card-art" style="background: linear-gradient(135deg, #2e7d32, #1b5e20);"></div>
+                    <div style="font-size: 0.75rem; font-weight: bold; color: #1DB954;">Retro Classics ★</div>
+                  </div>
+                  <div class="mock-tv-card">
+                    <div class="mock-tv-card-art" style="background: linear-gradient(135deg, #1565c0, #0d47a1);"></div>
+                    <div style="font-size: 0.75rem; font-weight: bold;">Lo-Fi Chill</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         5. Core Features Grid
+         ======================================================================== -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Key Features</div>
+          <h2>Built Without Compromise</h2>
+          <p>Recordify combines studio streaming fidelity, local audio capture, and intelligent automation into one seamless package.</p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">✨</div>
+            <h4>Spotify-Inspired UI</h4>
+            <p>Sleek dark theme built with Jetpack Compose Material 3. Tailored for low battery consumption on AMOLED displays with fluid spring physics.</p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">🔄</div>
+            <h4>VibeFlow Smart Queue</h4>
+            <p>Hold and drag tracks to reorder seamlessly. Swipe right to add songs to queue instantly or swipe left to remove. Auto-recommends matching songs.</p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">📺</div>
+            <h4>Dedicated Android TV UI</h4>
+            <p>Custom 10-foot user experience designed specifically for TV remotes with focus retention, edge locking, and widescreen layout.</p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">📶</div>
+            <h4>70% Data Saver Mode</h4>
+            <p>Low-bandwidth 96 kbps chunked streaming with a 10s smart skip window. If you skip a song within 10 seconds, 0 MB of data is consumed.</p>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">🔍</div>
+            <h4>Multi-Source Global Search</h4>
+            <p>Queries Spotify metadata, JioSaavn, and YouTube audio simultaneously. Browse full movie soundtracks and 60+ curated retro albums.</p>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">🎙️</div>
+            <h4>Internal Audio Capture</h4>
+            <p>Official Android 10+ AudioPlaybackCapture API records device audio into high-bitrate AAC/M4A with automatic silence detection & track splitting.</p>
+          </div>
+
+          <!-- Feature 7 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">✂️</div>
+            <h4>Precision Ad Elimination</h4>
+            <p>3-in-1 ad cutter detects commercial interruptions on YouTube streams and applies imperceptible micro-crossfades for uninterrupted listening.</p>
+          </div>
+
+          <!-- Feature 8 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">🧠</div>
+            <h4>Offline AI Taste Profiler</h4>
+            <p>Import your Spotify extended streaming history ZIP archive to train personalized recommendation models locally on your device without cloud tracking.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         6. Step-by-Step Installation Guide
+         ======================================================================== -->
+    <section class="install-section" id="install">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Easy Setup</div>
+          <h2>How to Install Recordify</h2>
+          <p>Follow these simple steps to install the APK on your phone, tablet, or television.</p>
+        </div>
+
+        <div class="install-guide-grid">
+          <!-- Phone Installation -->
+          <div class="guide-box">
+            <div class="guide-box-header">
+              <span style="font-size: 2.2rem;">📱</span>
+              <h3>On Android Phone & Tablet</h3>
+            </div>
+
+            <ul class="step-list">
+              <li class="step-item">
+                <div class="step-number">1</div>
+                <div class="step-text">
+                  <h5>Download the APK</h5>
+                  <p>Click the green <strong>Download for Android</strong> button above to download <code>Recordify.apk</code>.</p>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-number">2</div>
+                <div class="step-text">
+                  <h5>Open the Downloaded File</h5>
+                  <p>Tap the download notification or locate the APK file in your device's <strong>Downloads</strong> folder.</p>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-number">3</div>
+                <div class="step-text">
+                  <h5>Allow Unknown Sources</h5>
+                  <p>If prompted by Android, toggle <em>Allow from this source</em> in Settings for your browser or file manager.</p>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-number">4</div>
+                <div class="step-text">
+                  <h5>Tap Install & Launch</h5>
+                  <p>Tap <strong>Install</strong>. Once complete, open Recordify and start streaming immediately!</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- TV Installation -->
+          <div class="guide-box">
+            <div class="guide-box-header">
+              <span style="font-size: 2.2rem;">📺</span>
+              <h3>On Android TV & Google TV</h3>
+            </div>
+
+            <ul class="step-list">
+              <li class="step-item">
+                <div class="step-number">A</div>
+                <div class="step-text">
+                  <h5>Method 1: Downloader App (Recommended)</h5>
+                  <p>Install the free <strong>Downloader</strong> app from Google Play Store on your TV. Enter the direct APK URL to download and install.</p>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-number">B</div>
+                <div class="step-text">
+                  <h5>Method 2: Send Files to TV</h5>
+                  <p>Download <code>Recordify.TV.apk</code> on your phone. Install <strong>Send Files to TV</strong> on both phone & TV, transfer the APK over Wi-Fi, and install.</p>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-number">C</div>
+                <div class="step-text">
+                  <h5>Method 3: USB Flash Drive</h5>
+                  <p>Copy <code>Recordify.TV.apk</code> to a USB flash drive, plug it into your TV's USB port, and open it via any TV File Manager.</p>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-number">✓</div>
+                <div class="step-text">
+                  <h5>Launch from TV Apps Row</h5>
+                  <p>Recordify TV will appear directly on your Android TV home screen apps row ready for your remote!</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         7. Technical Specs
+         ======================================================================== -->
+    <section class="specs-section" id="specs">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Specifications</div>
+          <h2>Technical Architecture</h2>
+          <p>Built with modern Android engineering standards for maximum performance and stability.</p>
+        </div>
+
+        <div class="specs-table-box">
+          <table class="specs-table">
+            <thead>
+              <tr>
+                <th>Specification</th>
+                <th>Mobile Version</th>
+                <th>TV Version</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Minimum OS</strong></td>
+                <td>Android 10+ (API Level 29)</td>
+                <td>Android TV / Google TV (API Level 29)</td>
+              </tr>
+              <tr>
+                <td><strong>Target Devices</strong></td>
+                <td>Phones, Tablets, Foldables</td>
+                <td>Android TV, Google TV, Fire TV, Shield TV</td>
+              </tr>
+              <tr>
+                <td><strong>Architecture</strong></td>
+                <td>ARM64-v8a, ARMeabi-v7a, x86_64</td>
+                <td>ARM64-v8a, ARMeabi-v7a, x86_64</td>
+              </tr>
+              <tr>
+                <td><strong>Audio Engine</strong></td>
+                <td>AndroidX Media3 ExoPlayer</td>
+                <td>AndroidX Media3 ExoPlayer</td>
+              </tr>
+              <tr>
+                <td><strong>UI Framework</strong></td>
+                <td>Jetpack Compose Material 3</td>
+                <td>Jetpack Compose 10-Foot Leanback UI</td>
+              </tr>
+              <tr>
+                <td><strong>Remote Control</strong></td>
+                <td>Touch & Bluetooth TWS Earbuds</td>
+                <td>Native TV Remote D-Pad Navigation</td>
+              </tr>
+              <tr>
+                <td><strong>License</strong></td>
+                <td>Apache 2.0 (Open Source)</td>
+                <td>Apache 2.0 (Open Source)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         8. Interactive FAQ
+         ======================================================================== -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">FAQ</div>
+          <h2>Frequently Asked Questions</h2>
+          <p>Find answers to common questions about using Recordify.</p>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Is Recordify completely free to use?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, 100%! Recordify is completely free and open-source under the Apache 2.0 license. There are no paid subscriptions, in-app purchases, or hidden fees.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do I need a Spotify account to stream music?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>No login or Spotify account is required. You can search, explore curated albums, and stream immediately upon opening the app.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How does the 70% Data Saver mode work?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>When Data Saver is enabled in Settings, Recordify streams audio at an optimized 96 kbps bitrate and applies a 10-second smart skip window. If you skip a track within 10 seconds, zero audio data is downloaded over your cellular connection.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Can I listen to songs completely offline?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. You can capture any eligible audio stream directly into your local library as high-quality AAC/M4A audio files, or download tracks to play without an internet connection.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Does Recordify TV work with standard TV remotes?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes! Recordify TV is built specifically for standard TV remote controls. You can navigate menus, search, control playback, and browse albums purely using the Up, Down, Left, Right, and OK buttons.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         9. Bottom CTA Banner
+         ======================================================================== -->
+    <section class="cta-banner">
+      <div class="container">
+        <h2>Ready for Better Music?</h2>
+        <p>Download Recordify today and take complete control of your streaming, audio capture, and television experience.</p>
+        
+        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
           <a href="https://github.com/hetansh21-pro/Recordify/releases/download/v1.0.0/Recordify.apk" 
-             class="btn btn-primary download-btn download-trigger" 
+             class="btn btn-primary download-trigger" 
              data-platform="Recordify Mobile">
-            ⬇️ Download for Android
+            📱 Download Mobile APK
           </a>
-        </div>
-
-        <!-- Card 2: Android TV / Google TV -->
-        <div class="download-card">
-          <div>
-            <div class="card-top">
-              <div class="platform-icon">📺</div>
-              <span class="version-pill">v1.0.0 • TV</span>
-            </div>
-            <h3>Recordify TV</h3>
-            <p>Dedicated 10-foot television experience with full remote control focus, locked navigation, and live audio visualizers.</p>
-            
-            <ul class="card-meta-list">
-              <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                Android TV, Google TV & Fire TV
-              </li>
-              <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                73.5 MB APK • 100% Remote D-pad Ready
-              </li>
-              <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                Capsule Search & Full-Screen Player
-              </li>
-            </ul>
-          </div>
-
           <a href="https://github.com/hetansh21-pro/Recordify/releases/download/v1.0.0/Recordify.TV.apk" 
-             class="btn btn-primary download-btn download-trigger" 
+             class="btn btn-outline download-trigger" 
              data-platform="Recordify TV">
-            ⬇️ Download for Android TV
+            📺 Download TV APK
           </a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ========================================================================
-       3. Interactive Device Showcase (Phone vs TV)
-       ======================================================================== -->
-  <section class="showcase-section" id="showcase">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-tag">Dual Platform Experience</div>
-        <h2>Engineered for Your Phone. Perfected for Your Living Room.</h2>
-        <p>Switch between the phone and TV modes below to see how Recordify adapts seamlessly to your lifestyle.</p>
+    <!-- ========================================================================
+         10. Footer
+         ======================================================================== -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div class="brand-logo" style="justify-content: center;">
+          <img src="assets/images/ic_recordify_logo_circle.png" alt="Recordify Logo">
+          <span>Recordify</span>
+        </div>
+
+        <ul class="footer-links">
+          <li><a href="#download">Downloads</a></li>
+          <li><a href="#screenshots">Screenshots</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#showcase">Mobile vs TV</a></li>
+          <li><a href="#install">Installation</a></li>
+          <li><a href="https://github.com/hetansh21-pro/Recordify" target="_blank" rel="noopener">GitHub Project</a></li>
+          <li><a href="https://github.com/hetansh21-pro/Recordify/releases/tag/v1.0.0" target="_blank" rel="noopener">Release v1.0.0</a></li>
+        </ul>
+
+        <p class="footer-copyright">
+          © 2026 Recordify. Built with ❤️ for music enthusiasts. Released under the Apache 2.0 License.
+        </p>
       </div>
+    </footer>
 
-      <div class="showcase-tabs">
-        <button class="showcase-tab-btn active" data-tab="mobile">📱 Mobile Phone Experience</button>
-        <button class="showcase-tab-btn" data-tab="tv">📺 Android TV 10-Foot UI</button>
-      </div>
-
-      <div class="showcase-content-box">
-        <!-- Panel 1: Mobile -->
-        <div class="showcase-panel active" id="panel-mobile">
-          <div class="showcase-info">
-            <h3>Fluid Touch Control & VibeFlow</h3>
-            <p>Every pixel in Recordify Mobile is tuned for tactile satisfaction. Drag songs anywhere across your queue, swipe right to add music instantly, and glide smoothly with fluid spring physics.</p>
-            
-            <ul class="feature-bullet-list">
-              <li>
-                <div class="bullet-icon">✓</div>
-                <div class="bullet-text">
-                  <strong>Multi-Step Drag & Drop Reordering</strong>
-                  <span>Hold any queue track handle (≡) and move it up or down to place it exactly where you want.</span>
-                </div>
-              </li>
-              <li>
-                <div class="bullet-icon">✓</div>
-                <div class="bullet-text">
-                  <strong>Spotify Swipe-to-Queue Everywhere</strong>
-                  <span>Swipe right on any search result or album track to queue it instantly with a green indicator.</span>
-                </div>
-              </li>
-              <li>
-                <div class="bullet-icon">✓</div>
-                <div class="bullet-text">
-                  <strong>70% Data Saver Mode</strong>
-                  <span>Low-bandwidth 96 kbps audio streaming with a 10s smart skip window protects your mobile data plan.</span>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="device-frame-wrapper">
-            <div class="mobile-frame-mockup">
-              <div class="mock-topbar">
-                <span>9:41</span>
-                <span>Recordify Playing</span>
-                <span>100%</span>
-              </div>
-              <div class="mock-album-art">
-                <img src="assets/images/ic_recordify_logo.png" alt="Playing" style="width: 70px; height: 70px; border-radius: 50%;">
-              </div>
-              <div class="mock-song-info">
-                <div class="mock-song-title">Tum Hi Ho (Retro Vibes)</div>
-                <div class="mock-artist-name">Arijit Singh • Aashiqui 2</div>
-              </div>
-              <div class="mock-scrubber">
-                <div class="mock-scrubber-fill"></div>
-              </div>
-              <div class="mock-controls">
-                <span style="font-size: 1.2rem; color: #b3b3b3;">🔀</span>
-                <span style="font-size: 1.5rem; color: #fff;">⏮</span>
-                <div class="mock-play-btn">⏸</div>
-                <span style="font-size: 1.5rem; color: #fff;">⏭</span>
-                <span style="font-size: 1.2rem; color: #b3b3b3;">🔁</span>
-              </div>
-              <div class="mock-queue-pill">
-                <span>Next in Queue: "Kesariya"</span>
-                <span style="color: #1DB954; font-weight: bold;">≡ Drag</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Panel 2: TV -->
-        <div class="showcase-panel" id="panel-tv">
-          <div class="showcase-info">
-            <h3>Pure 10-Foot Remote Control</h3>
-            <p>Built completely from the ground up for the TV screen. No air mouse or trackpad required. Navigate effortlessly from your couch using the D-pad arrow keys on your TV remote.</p>
-            
-            <ul class="feature-bullet-list">
-              <li>
-                <div class="bullet-icon">✓</div>
-                <div class="bullet-text">
-                  <strong>Strict Focus Locking</strong>
-                  <span>Focus stays strictly locked to open albums and content rows so your remote cursor never gets lost behind views.</span>
-                </div>
-              </li>
-              <li>
-                <div class="bullet-icon">✓</div>
-                <div class="bullet-text">
-                  <strong>Top Navigation Bar with Now-Playing Pill</strong>
-                  <span>Always see current track artwork and live animated green equalizer bars in the top corner.</span>
-                </div>
-              </li>
-              <li>
-                <div class="bullet-icon">✓</div>
-                <div class="bullet-text">
-                  <strong>Capsule Search Bar</strong>
-                  <span>Native TV virtual keyboard input with manual Enter-only execution so you can type full queries uninterrupted.</span>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="device-frame-wrapper">
-            <div class="tv-frame-mockup">
-              <div class="mock-tv-navbar">
-                <div style="display: flex; align-items: center; gap: 8px;">
-                  <img src="assets/images/ic_recordify_logo_circle.png" style="width: 22px; height: 22px; border-radius: 50%;">
-                  <span style="font-size: 0.8rem; font-weight: 800;">Recordify TV</span>
-                </div>
-                <div class="mock-tv-tabs">
-                  <span class="mock-tv-tab active">Home</span>
-                  <span class="mock-tv-tab">Search</span>
-                  <span class="mock-tv-tab">Your Library</span>
-                </div>
-                <span style="color: #1DB954; font-size: 0.75rem; font-weight: bold;">Live EQ ılılı</span>
-              </div>
-              <div class="mock-tv-grid">
-                <div class="mock-tv-card">
-                  <div class="mock-tv-card-art"></div>
-                  <div style="font-size: 0.75rem; font-weight: bold;">90s Bollywood</div>
-                </div>
-                <div class="mock-tv-card" style="border-color: #ffffff;">
-                  <div class="mock-tv-card-art" style="background: linear-gradient(135deg, #2e7d32, #1b5e20);"></div>
-                  <div style="font-size: 0.75rem; font-weight: bold; color: #1DB954;">Retro Classics ★</div>
-                </div>
-                <div class="mock-tv-card">
-                  <div class="mock-tv-card-art" style="background: linear-gradient(135deg, #1565c0, #0d47a1);"></div>
-                  <div style="font-size: 0.75rem; font-weight: bold;">Lo-Fi Chill</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       4. Core Features Grid
-       ======================================================================== -->
-  <section class="features-section" id="features">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-tag">Key Features</div>
-        <h2>Built Without Compromise</h2>
-        <p>Recordify combines studio streaming fidelity, local audio capture, and intelligent automation into one seamless package.</p>
-      </div>
-
-      <div class="features-grid">
-        <!-- Feature 1 -->
-        <div class="feature-card">
-          <div class="feature-icon-wrapper">✨</div>
-          <h4>Spotify-Inspired UI</h4>
-          <p>Sleek dark theme built with Jetpack Compose Material 3. Tailored for low battery consumption on AMOLED displays with fluid spring physics.</p>
-        </div>
-
-        <!-- Feature 2 -->
-        <div class="feature-card">
-          <div class="feature-icon-wrapper">🔄</div>
-          <h4>VibeFlow Smart Queue</h4>
-          <p>Hold and drag tracks to reorder seamlessly. Swipe right to add songs to queue instantly or swipe left to remove. Auto-recommends matching songs.</p>
-        </div>
-
-        <!-- Feature 3 -->
-        <div class="feature-card">
-          <div class="feature-icon-wrapper">📺</div>
-          <h4>Dedicated Android TV UI</h4>
-          <p>Custom 10-foot user experience designed specifically for TV remotes with focus retention, edge locking, and widescreen layout.</p>
-        </div>
-
-        <!-- Feature 4 -->
-        <div class="feature-card">
-          <div class="feature-icon-wrapper">📶</div>
-          <h4>70% Data Saver Mode</h4>
-          <p>Low-bandwidth 96 kbps chunked streaming with a 10s smart skip window. If you skip a song within 10 seconds, 0 MB of data is consumed.</p>
-        </div>
-
-        <!-- Feature 5 -->
-        <div class="feature-card">
-          <div class="feature-icon-wrapper">🔍</div>
-          <h4>Multi-Source Global Search</h4>
-          <p>Queries Spotify metadata, JioSaavn, and YouTube audio simultaneously. Browse full movie soundtracks and 60+ curated retro albums.</p>
-        </div>
-
-        <!-- Feature 6 -->
-        <div class="feature-card">
-          <div class="feature-icon-wrapper">🎙️</div>
-          <h4>Internal Audio Capture</h4>
-          <p>Official Android 10+ AudioPlaybackCapture API records device audio into high-bitrate AAC/M4A with automatic silence detection & track splitting.</p>
-        </div>
-
-        <!-- Feature 7 -->
-        <div class="feature-card">
-          <div class="feature-icon-wrapper">✂️</div>
-          <h4>Precision Ad Elimination</h4>
-          <p>3-in-1 ad cutter detects commercial interruptions on YouTube streams and applies imperceptible micro-crossfades for uninterrupted listening.</p>
-        </div>
-
-        <!-- Feature 8 -->
-        <div class="feature-card">
-          <div class="feature-icon-wrapper">🧠</div>
-          <h4>Offline AI Taste Profiler</h4>
-          <p>Import your Spotify extended streaming history ZIP archive to train personalized recommendation models locally on your device without cloud tracking.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       5. Step-by-Step Installation Guide
-       ======================================================================== -->
-  <section class="install-section" id="install">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-tag">Easy Setup</div>
-        <h2>How to Install Recordify</h2>
-        <p>Follow these simple steps to install the APK on your phone, tablet, or television.</p>
-      </div>
-
-      <div class="install-guide-grid">
-        <!-- Phone Installation -->
-        <div class="guide-box">
-          <div class="guide-box-header">
-            <span style="font-size: 2rem;">📱</span>
-            <h3>On Android Phone & Tablet</h3>
-          </div>
-
-          <ul class="step-list">
-            <li class="step-item">
-              <div class="step-number">1</div>
-              <div class="step-text">
-                <h5>Download the APK</h5>
-                <p>Click the green <strong>Download for Android</strong> button above to download <code>Recordify.apk</code>.</p>
-              </div>
-            </li>
-            <li class="step-item">
-              <div class="step-number">2</div>
-              <div class="step-text">
-                <h5>Open the Downloaded File</h5>
-                <p>Tap the download notification or locate the APK file in your device's <strong>Downloads</strong> folder.</p>
-              </div>
-            </li>
-            <li class="step-item">
-              <div class="step-number">3</div>
-              <div class="step-text">
-                <h5>Allow Unknown Sources</h5>
-                <p>If prompted by Android, toggle <em>Allow from this source</em> in Settings for your browser or file manager.</p>
-              </div>
-            </li>
-            <li class="step-item">
-              <div class="step-number">4</div>
-              <div class="step-text">
-                <h5>Tap Install & Launch</h5>
-                <p>Tap <strong>Install</strong>. Once complete, open Recordify and start streaming immediately!</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <!-- TV Installation -->
-        <div class="guide-box">
-          <div class="guide-box-header">
-            <span style="font-size: 2rem;">📺</span>
-            <h3>On Android TV & Google TV</h3>
-          </div>
-
-          <ul class="step-list">
-            <li class="step-item">
-              <div class="step-number">A</div>
-              <div class="step-text">
-                <h5>Method 1: Downloader App (Recommended)</h5>
-                <p>Install the free <strong>Downloader</strong> app from Google Play Store on your TV. Enter the direct APK URL to download and install.</p>
-              </div>
-            </li>
-            <li class="step-item">
-              <div class="step-number">B</div>
-              <div class="step-text">
-                <h5>Method 2: Send Files to TV</h5>
-                <p>Download <code>Recordify.TV.apk</code> on your phone. Install <strong>Send Files to TV</strong> on both phone & TV, transfer the APK over Wi-Fi, and install.</p>
-              </div>
-            </li>
-            <li class="step-item">
-              <div class="step-number">C</div>
-              <div class="step-text">
-                <h5>Method 3: USB Flash Drive</h5>
-                <p>Copy <code>Recordify.TV.apk</code> to a USB flash drive, plug it into your TV's USB port, and open it via any TV File Manager.</p>
-              </div>
-            </li>
-            <li class="step-item">
-              <div class="step-number">✓</div>
-              <div class="step-text">
-                <h5>Launch from TV Apps Row</h5>
-                <p>Recordify TV will appear directly on your Android TV home screen apps row ready for your remote!</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       6. Technical Specs
-       ======================================================================== -->
-  <section class="specs-section" id="specs">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-tag">Specifications</div>
-        <h2>Technical Architecture</h2>
-        <p>Built with modern Android engineering standards for maximum performance and stability.</p>
-      </div>
-
-      <div class="specs-table-box">
-        <table class="specs-table">
-          <thead>
-            <tr>
-              <th>Specification</th>
-              <th>Mobile Version</th>
-              <th>TV Version</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Minimum OS</strong></td>
-              <td>Android 10+ (API Level 29)</td>
-              <td>Android TV / Google TV (API Level 29)</td>
-            </tr>
-            <tr>
-              <td><strong>Target Devices</strong></td>
-              <td>Phones, Tablets, Foldables</td>
-              <td>Android TV, Google TV, Fire TV, Shield TV</td>
-            </tr>
-            <tr>
-              <td><strong>Architecture</strong></td>
-              <td>ARM64-v8a, ARMeabi-v7a, x86_64</td>
-              <td>ARM64-v8a, ARMeabi-v7a, x86_64</td>
-            </tr>
-            <tr>
-              <td><strong>Audio Engine</strong></td>
-              <td>AndroidX Media3 ExoPlayer</td>
-              <td>AndroidX Media3 ExoPlayer</td>
-            </tr>
-            <tr>
-              <td><strong>UI Framework</strong></td>
-              <td>Jetpack Compose Material 3</td>
-              <td>Jetpack Compose 10-Foot Leanback UI</td>
-            </tr>
-            <tr>
-              <td><strong>Remote Control</strong></td>
-              <td>Touch & Bluetooth TWS Earbuds</td>
-              <td>Native TV Remote D-Pad Navigation</td>
-            </tr>
-            <tr>
-              <td><strong>License</strong></td>
-              <td>Apache 2.0 (Open Source)</td>
-              <td>Apache 2.0 (Open Source)</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       7. Interactive FAQ
-       ======================================================================== -->
-  <section class="faq-section" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-tag">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Find answers to common questions about using Recordify.</p>
-      </div>
-
-      <div class="faq-accordion">
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>Is Recordify completely free to use?</span>
-            <span class="faq-arrow">▼</span>
-          </button>
-          <div class="faq-answer">
-            <p>Yes, 100%! Recordify is completely free and open-source under the Apache 2.0 license. There are no paid subscriptions, in-app purchases, or hidden fees.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>Do I need a Spotify account to stream music?</span>
-            <span class="faq-arrow">▼</span>
-          </button>
-          <div class="faq-answer">
-            <p>No login or Spotify account is required. You can search, explore curated albums, and stream immediately upon opening the app.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>How does the 70% Data Saver mode work?</span>
-            <span class="faq-arrow">▼</span>
-          </button>
-          <div class="faq-answer">
-            <p>When Data Saver is enabled in Settings, Recordify streams audio at an optimized 96 kbps bitrate and applies a 10-second smart skip window. If you skip a track within 10 seconds, zero audio data is downloaded over your cellular connection.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>Can I listen to songs completely offline?</span>
-            <span class="faq-arrow">▼</span>
-          </button>
-          <div class="faq-answer">
-            <p>Yes. You can capture any eligible audio stream directly into your local library as high-quality AAC/M4A audio files, or download tracks to play without an internet connection.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>Does Recordify TV work with standard TV remotes?</span>
-            <span class="faq-arrow">▼</span>
-          </button>
-          <div class="faq-answer">
-            <p>Yes! Recordify TV is built specifically for standard TV remote controls. You can navigate menus, search, control playback, and browse albums purely using the Up, Down, Left, Right, and OK buttons.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       8. Bottom CTA Banner
-       ======================================================================== -->
-  <section class="cta-banner">
-    <div class="container">
-      <h2>Ready for Better Music?</h2>
-      <p>Download Recordify today and take complete control of your streaming, audio capture, and television experience.</p>
-      
-      <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
-        <a href="https://github.com/hetansh21-pro/Recordify/releases/download/v1.0.0/Recordify.apk" 
-           class="btn btn-primary download-trigger" 
-           data-platform="Recordify Mobile">
-          📱 Download Mobile APK
-        </a>
-        <a href="https://github.com/hetansh21-pro/Recordify/releases/download/v1.0.0/Recordify.TV.apk" 
-           class="btn btn-outline download-trigger" 
-           data-platform="Recordify TV">
-          📺 Download TV APK
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       9. Footer
-       ======================================================================== -->
-  <footer class="site-footer">
-    <div class="container footer-content">
-      <div class="brand-logo" style="justify-content: center;">
-        <img src="assets/images/ic_recordify_logo_circle.png" alt="Recordify Logo">
-        <span>Recordify</span>
-      </div>
-
-      <ul class="footer-links">
-        <li><a href="#download">Downloads</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#showcase">Mobile vs TV</a></li>
-        <li><a href="#install">Installation</a></li>
-        <li><a href="https://github.com/hetansh21-pro/Recordify" target="_blank" rel="noopener">GitHub Project</a></li>
-        <li><a href="https://github.com/hetansh21-pro/Recordify/releases/tag/v1.0.0" target="_blank" rel="noopener">Release v1.0.0</a></li>
-      </ul>
-
-      <p class="footer-copyright">
-        © 2026 Recordify. Built with ❤️ for music enthusiasts. Released under the Apache 2.0 License.
-      </p>
-    </div>
-  </footer>
+  </div>
 
   <!-- Scripts -->
   <script src="js/app.js"></script>
