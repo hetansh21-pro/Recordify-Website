@@ -447,12 +447,26 @@ a {
   width: 58px;
   height: 58px;
   border-radius: var(--radius-md);
-  background: linear-gradient(135deg, rgba(29, 185, 84, 0.2) 0%, rgba(0, 210, 255, 0.1) 100%);
+  background: rgba(255, 255, 255, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
-  border: 1px solid rgba(29, 185, 84, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: var(--transition-smooth);
+}
+
+.download-card:hover .platform-icon {
+  background: rgba(29, 185, 84, 0.15);
+  border-color: var(--green-bright);
+}
+
+.platform-icon svg {
+  stroke: #ffffff;
+  transition: var(--transition-smooth);
+}
+
+.download-card:hover .platform-icon svg {
+  stroke: var(--green-bright);
 }
 
 .version-pill {
@@ -622,6 +636,9 @@ a {
 }
 
 .gallery-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   padding: 10px 22px;
   border-radius: var(--radius-pill);
   background: rgba(255, 255, 255, 0.05);
@@ -631,6 +648,11 @@ a {
   font-size: 0.95rem;
   cursor: pointer;
   transition: var(--transition-smooth);
+}
+
+.gallery-pill svg {
+  stroke: currentColor;
+  flex-shrink: 0;
 }
 
 .gallery-pill:hover {
@@ -928,14 +950,27 @@ a {
   width: 52px;
   height: 52px;
   border-radius: var(--radius-sm);
-  background: linear-gradient(135deg, rgba(29, 185, 84, 0.18) 0%, rgba(0, 210, 255, 0.12) 100%);
-  color: var(--green-bright);
+  background: rgba(255, 255, 255, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
   margin-bottom: 20px;
-  border: 1px solid rgba(29, 185, 84, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: var(--transition-smooth);
+}
+
+.feature-card:hover .feature-icon-wrapper {
+  background: rgba(29, 185, 84, 0.15);
+  border-color: var(--green-bright);
+}
+
+.feature-icon-wrapper svg {
+  stroke: #ffffff;
+  transition: var(--transition-smooth);
+}
+
+.feature-card:hover .feature-icon-wrapper svg {
+  stroke: var(--green-bright);
 }
 
 .feature-card h4 {
@@ -978,6 +1013,22 @@ a {
   align-items: center;
   gap: 16px;
   margin-bottom: 28px;
+}
+
+.guide-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.guide-icon-box svg {
+  stroke: #ffffff;
 }
 
 .guide-box-header h3 {
